@@ -1,0 +1,45 @@
+"""
+연산자
+"""
+
+print("=" * 60)
+print("다양한 문자열 메소드")
+print("=" * 60)
+print(f"7 + 3 = {7 + 3}")
+print(f"7 - 3 = {7 - 3}")
+print(f"7 X 3 = {7 * 3}")
+print(f"7 / 3 = {7 / 3}")   # 실수 나눗셈 
+print(f"7 // 3 = {7 // 3}") # 정수 나눗셈 
+print(f"7 % 3 = {7 % 3}")   # 나머지 연산 
+print(f"7 ** 3 = {7 ** 3}") # 거듭제곱 연산, 7을 3번 곱함 
+
+print(f"실수 나눗셈 타입 : {type(7/3)}")
+print(f"실수 나눗셈 타입 : {type(6/3)}")
+
+print(f"-7 / 3 = {-7 / 3}")
+print(f"-7 // 3 = {-7 // 3}") #자바에서는 버림처리, 파이썬에서는 내림처리
+
+print("=" * 60)
+print("비교, 논리 연산자")
+print("=" * 60)
+
+a, b = 2, 5
+
+print(f"a, b --> {a}, {b}")
+print(f"a==b --> {a == b}")
+print(f"a != b --> {a!= b}")
+print(f"a < b --> {a < b}")
+print(f"a >= b --> {a >= b}")
+print()
+
+#논리 연산자: 자바에서 &&, ||, ! 연산자아닌
+#                파이썬에서는 and, or, not 사용
+print(f"and --> {True and True}")
+print(f"or --> {True or False}")
+print(f"not --> {not True}")
+
+#a 값이 -5 ~ 5사이의 값인가?
+print(f"결과:{-5 <= a and a <= 5}")
+
+print(f"{-5 <= a <= 5}") #연쇄 비교가능!
+#TODO:멤버쉽 연산자...
