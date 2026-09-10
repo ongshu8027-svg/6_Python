@@ -70,3 +70,11 @@ for amount in [5000, 50000, -1000]:
     acc.withdraw(amount)
 
 # TODO: 마지막 반복문의(:69) 발생되는 예외를 처리 ( ~ 18:00 이메일 제출)
+for amount in [5000, 50000, -1000]:
+    try:
+        acc.withdraw(amount)
+        print(f"{amount:,}원 출금 성공 -> {acc}")
+    except InvalidAmountError as e:
+        print(f"{amount:,}원 출금 실패 (금액 오류): {e}")
+    except NoBalanceError as e:
+        print(f"{amount:,}원 출금 실패 (잔액 부족): {e}")
