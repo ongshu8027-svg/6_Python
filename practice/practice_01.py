@@ -1,0 +1,5 @@
+name = input("이름: ")
+gender = input("성별: ")
+age = int(input("나이:"))
+height = float(input("키:(cm): "))
+print(f"이름: {name}, 성별: {gender}, 나이: {age}, 키: {height:.2f}cm")
